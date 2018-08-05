@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>newjs测试</title>
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+	</head>
+	 
+	<script type="text/javascript" src="../javascript/new.js"></script>
+	<body>
+		<header>
+			<div class="circularUserImg"><img src="../images/userImg_04.png"/></div>
+		</header>
+		<div id="analyze">res_analyseStr</div>
+		<mark class="mk1">建议：</mark>（点击分析更换“建议”颜色，点击建议弹出当前屏幕宽高）
+		<div id="advise">res_advise</div>
+		<footer>
+			<div id="testAgain">是否在微信</div>
+			<div id="shareResut">晒结果</div>
+		</footer>
+		<div id="myShelter">
+			<img src="../images/shareTipsImg.png" alt="" class="showShelterImg">
+			<h2 class="showShelterTitle">点击右上角按钮</h2>
+			<p class="showShelterP">分享给好友或朋友圈</p>
+		</div>
+	</body>
+	<script type="text/javascript">
+	//页面加载后请求数据渲染
+	window.onload=function(){
+		newjs.ajax("get","../testData/testData.json",null,function(res){
+			newjs.$id("analyze").innerText=res.res_result;
+			newjs.$id("advise").innerText=res.res_advise;
+		}, function (errorInfo) {
+				newjs.$id("analyze").innerText="请求失败，未请求到分析";
+				newjs.$id("advise").innerText="请求失败，未请求到建议";
+		});		
+	}
+		//自适应
+		newjs.scalingByProportion(640,20);		
+	console.log("自适应得出的根字体大小"+document.documentElement.style.fontSize)		
+		//弹层弹出 
+		newjs.$id("shareResut").onclick = function(){
+			newjs.showShelter(true);//参数为是否阻止滑动弹层时的操作
+		};
+		//弹层的隐藏
+        newjs.$id('myShelter').onclick=function(e){  
+              newjs.closeSheleter();
+        }
+        //alert出是否在微信浏览器
+         newjs.$id("testAgain").onclick=function(){
+         	alert("是否在微信内浏览："+newjs.isWeiXin())
+         }
+         
+         //随机颜色
+        newjs.$id("analyze").onclick=function(){
+        	 newjs.$class("mk1")[0].style.color = newjs.randomColor();
+        }
+       //输出当前屏幕宽高
+       newjs.$id("advise").onclick=function(){
+        	alert("当前屏幕宽"+newjs.$w()+"px，高"+newjs.$h()+"px。")
+        }
+
+	</script>
+	
+	
+</html>

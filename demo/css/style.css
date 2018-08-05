@@ -1,0 +1,195 @@
+	*{
+				margin:0;
+				padding: 0;
+			}
+			html{
+				font-size: 20px;
+				width:32rem;
+			}
+			body{
+				overflow: auto;
+				width: 32rem;
+				}
+			a{
+				text-decoration:none;
+			}
+			ul,li{
+				list-style: none;
+				margin: 0;
+			}
+			header{
+				width: 100vw;
+				height: 22vh;
+				background-image:url(../images/resut2bg.png) ;
+				background-size:  100vw 22vh;
+				text-align: center;
+				overflow: hidden;
+				color: #fff;
+				font-size: 1.5rem;
+			}
+			.circularUserImg{
+				height: 18.75vw;
+				width: 18.75vw;
+				border-radius: 50%;
+				margin: 4vh auto 1vh;
+			}
+			#circleUserImg0{
+				height: 6rem;				
+				width: 6rem;
+				border:0.2rem solid #ff;
+				border-radius:50%;
+				display: inline-block;
+				margin:1rem 12.5rem 0;
+			}
+			
+			.circularUserImg img{				
+				height: 18.75vw;
+				width: 18.75vw;
+				border-radius: 50%;
+			}
+			#circleUserImg0 img{
+				/*height: 18.75vw;
+				width: 18.75vw;*/
+				height: 5.8rem;
+				width: 5.8rem;			
+				border-radius:50%;
+			
+			
+			}
+			.mk1{
+				margin-left: 2.2rem;
+				background: none;
+				color: #0caec1;
+			}
+			.mk0{
+				background: none;
+				color: #fc7668;
+			}
+			#advise{
+				margin-top:1.5rem;
+				margin-bottom:2rem ;
+			}
+			#advise0{
+				background: #fff;
+				border-radius: 0 0 0.2rem 0.2rem;
+				padding:  1rem 2rem 1.5rem 2rem;
+				box-shadow:0.1rem 0 0.1rem #cfccb6,-0.1rem 0 0.1rem #cfccb6;
+			}
+			#analyze{
+				margin-top:1rem ;
+				margin-bottom: 1.5rem;
+			}
+			#analyze0{							
+				margin-top:-3.5rem ;
+				margin-bottom: 0;
+				background: #fc7668;
+				border-radius: 0.2rem 0.2rem 0 0;
+				box-shadow:0 -0.2rem 0.2rem #a6a28b;
+				padding:  3.8rem 2rem 0 2rem;
+				color: #fff;
+			}
+			#analyze0 h4{
+				text-align: center;
+			}
+			#analyze0 p {
+				text-indent: 2em;	
+			}
+			#advise0 p{
+				text-indent:2rem;
+			}
+			#advise0,#analyze0{
+				width:26rem;
+				margin-left:3rem ;
+				box-sizing: border-box;
+				line-height: 2rem;	
+						
+			}
+			.boxSd{
+				width:26rem;
+				margin-left: 3rem;
+				z-index: -1;
+			}
+			.boxSd img{
+				width:26rem;
+			}
+			#advise,#analyze{
+				text-indent:2em;
+				padding:0 2.2rem;
+				line-height: 2.2rem;
+				color: #333;
+				margin-top:1rem;]
+				font-size:1.4rem ;
+			}
+			#myresultOperate0{
+				height: 3.9rem;
+				margin-top:0.9rem ;
+			}
+			#myresultOperate0 div{
+				height: 3.9rem;
+				display: inline-block;
+				width: 10rem;
+			}
+			#myresultOperate0 div img{
+				height: 3.9rem;
+				display: inline-block;
+				width: 10rem;
+			}
+			#myresultOperate0 div:first-child{
+				margin-left: 5rem;
+				margin-right: 2rem;
+			}
+			footer{
+				font-size:1.5rem ;
+			}
+			#testAgain,#shareResut{
+				width:10rem;
+				height: 3.9rem;
+				line-height: 3.9rem;
+				box-sizing: border-box;
+				display: inline-block;
+				border-radius: 0.4rem;
+				text-align: center;
+			}
+			#testAgain{
+				color: #0caec1;
+				border: 0.1rem solid #0caec1;
+				margin-left: 5rem;
+				margin-right: 2rem;
+			}
+			#shareResut{
+				background: #0CAEC1;
+				color: #fff;
+			}
+			#myShelter{
+				color: #fff;
+				text-align: center;
+				display: none;
+				width:32rem;
+				position: fixed;
+				top: 0;
+				height: 100vh;
+				background: rgba(0,0,0,0.5);
+			}
+			.showShelterImg{
+				float: right;
+				margin-top: 0.1rem;
+				margin-right:1.3rem; 
+				width: 8.5rem;
+				height: 12rem;
+			}
+			.showShelterTitle{
+				clear: both;
+				font-weight: bold;
+			}
+			.showShelterTitle,.showShelterP{
+				padding: 0.5rem;
+			}
+			.telNumTips{
+				width: 32em;
+				height: 100%;
+				background: rgba(0,0,0,0.5);
+				display: none;
+				position: fixed;
+				top:0;
+				z-index: 3;
+			}
